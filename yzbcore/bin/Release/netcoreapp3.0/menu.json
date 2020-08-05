@@ -1,0 +1,50 @@
+{
+	"status": 0,
+	"msg": "ok",
+	"data": [
+
+		{
+			"id": 13,
+			"name": "权限设置",
+			"icon": "&#xe726;",
+			"url": "",
+			"children": [
+				{
+					"id": 14,
+					"name": "管理员设置",
+					"icon": "",
+					"url": "/Admin"
+				}
+			]
+		},
+		{
+			"id": 8,
+			"name": "设备管理",
+			"icon": "&#xe705;",
+			"url": "",
+			"children": [
+				{
+					"id": 9,
+					"name": "设备列表",
+					"icon": "",
+					"url": "/Equipment"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "用户管理",
+			"icon": "&#xe6b8;",
+			"url": "",
+			"children": [
+				{
+					"id": 2,
+					"name": "用户列表",
+					"icon": "",
+					"url": "/Member"
+				}
+			]
+		}
+
+	]
+}

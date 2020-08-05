@@ -1,0 +1,529 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>yzbcore</name>
+    </assembly>
+    <members>
+        <member name="M:yzbcore.Bussiness.Util.FromUnixStamp(System.Int32)">
+            <summary>
+            将unix时间戳转化为datetime
+            </summary>
+            <param name="unixTimeStamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yzbcore.Bussiness.Util.ToUnixStamp(System.DateTime)">
+            <summary>
+            将datetime转化为unix时间戳
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="T:yzbcore.Bussiness.LogHelper">
+            <summary>
+            log4net帮助类
+            AdoNetAppender仅支持到.net framework4.5，不支持在.net core项目中持久化日志到数据库
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.account">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.password">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.is_disable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.create_operator_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.update_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.delete_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.admin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.auth_group">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.auth_group_access">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.auth_rule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.birdhouse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.equipment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.equipment_status_logs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.member">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.sms_logs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.warning_logs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_group.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_group.title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_group.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_group.rules">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_group.create_operator_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_group_access.uid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_group_access.group_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.pid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.sort">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.condition">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.member_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.equipment_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.min_temperature">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.最小温度">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.max_temperature">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.min_humidity">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.max_humidity">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.warning_ammonia_concentration">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.warning_negative_pressure">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.create_time">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.update_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.delete_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.serial">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.birdhouse_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.member_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.bind_status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.update_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.delete_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.EquipmentDisp.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.EquipmentDisp.serial">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.EquipmentDisp.name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.EquipmentDisp.bname">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.EquipmentDisp.username">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.EquipmentDisp.bind_status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.EquipmentDisp.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment_status_logs.serial">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment_status_logs.temperature">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment_status_logs.humidity">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment_status_logs.power_status">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment_status_logs.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.ModelBase.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.ModelBase.msg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.ModelBase.count">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.username">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.nick_name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.avatar">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.mobile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.warning_mobile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.update_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Sms_logs.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Sms_logs.mobile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Sms_logs.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Sms_logs.end_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Sms_logs.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Sms_logs.update_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Warning_logs.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Warning_logs.member_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Warning_logs.birdhouse_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Warning_logs.cause">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Warning_logs.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Warning_logs.update_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:yzbcore.Repository.ConnectionProvider.ConfigurationBuilder">
+            <summary>
+            加载配置文件，构建IConfigurationRoot
+            </summary>
+        </member>
+        <member name="F:yzbcore.Repository.ConnectionProvider._configuration">
+            <summary>
+            获取配置文件中的内容，继承自IConfiguration
+            </summary>
+        </member>
+    </members>
+</doc>

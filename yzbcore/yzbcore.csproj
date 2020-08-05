@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <ServerGarbageCollection>false</ServerGarbageCollection>
+    <ConcurrentGarbageCollection>true</ConcurrentGarbageCollection>
+    <UserSecretsId>1b9ded50-6814-4e88-84ec-7a01b03dbd4c</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\ZJ\Downloads\yzbcore\yzbcore\yzbcore.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="log4net.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CSRedisCore" Version="3.6.5" />
+    <PackageReference Include="Dapper" Version="2.0.35" />
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Redis" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+    <PackageReference Include="MySql.Data" Version="8.0.21" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="SuperSocket" Version="2.0.0-beta3" />
+    <PackageReference Include="SuperSocket.WebSocket" Version="2.0.0-beta3" />
+    <PackageReference Include="SuperSocket.WebSocket.Server" Version="2.0.0-beta3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.5.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.5.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUi" Version="5.5.1" />
+    <PackageReference Include="System.IO.Packaging" Version="5.0.0-preview.6.20305.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="log4net.config" />
+    <None Include="wwwroot\login\css\default.css" />
+    <None Include="wwwroot\login\css\demo.css" />
+    <None Include="wwwroot\login\css\loaders.css" />
+    <None Include="wwwroot\login\css\normalize.css" />
+    <None Include="wwwroot\login\css\styles.css" />
+    <None Include="wwwroot\login\img\key.png" />
+    <None Include="wwwroot\login\img\lock_icon_copy.png" />
+    <None Include="wwwroot\login\img\logo.png" />
+    <None Include="wwwroot\login\img\puff.svg" />
+    <None Include="wwwroot\login\img\Starry.jpg" />
+    <None Include="wwwroot\login\img\tick.png" />
+    <None Include="wwwroot\login\img\user_icon_copy.png" />
+    <None Include="wwwroot\login\js\jquery-ui.min.js" />
+    <None Include="wwwroot\login\js\jquery.min.js" />
+    <None Include="wwwroot\login\js\jquery.mockjax.js" />
+    <None Include="wwwroot\login\js\Particleground.js" />
+    <None Include="wwwroot\login\js\stopExecutionOnTimeout.js" />
+    <None Include="wwwroot\login\js\Treatment.js" />
+  </ItemGroup>
+
+</Project>

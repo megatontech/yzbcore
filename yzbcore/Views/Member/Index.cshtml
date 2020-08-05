@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["Title"] = "";
+    Layout = "_LayoutContent";
+}
+<div class="weadmin-nav">
+    @*<span class="layui-breadcrumb">
+            <a href="javascript:;">首页</a> <a href="javascript:;">会员管理</a>
+            <a href="javascript:;"> <cite>会员列表</cite></a>
+        </span>*@
+    <a class="layui-btn layui-btn-sm" style="margin-top:3px;float:right" href="javascript:location.replace(location.href);"
+       title="刷新">
+        <i class="layui-icon layui-icon-refresh"></i>
+        <!-- <i class="layui-icon" style="line-height:30px">&#x1002;</i> -->
+    </a>
+</div>
+
+<div class="weadmin-body">
+    @*<div class="layui-row">
+            <form class="layui-form layui-col-md12 we-search">
+                会员搜索：
+                <div class="layui-inline">
+                    <input class="layui-input" placeholder="开始日" name="start" id="start" />
+                </div>
+                <div class="layui-inline">
+                    <input class="layui-input" placeholder="截止日" name="end" id="end" />
+                </div>
+                <div class="layui-inline">
+                    <input type="text" name="username" placeholder="请输入用户名" autocomplete="off" class="layui-input" />
+                </div>
+                <button class="layui-btn" lay-submit="" lay-filter="sreach">
+                    <i class="layui-icon layui-icon-search"></i>
+                </button>
+            </form>
+        </div>*@
+    <div class="weadmin-block">
+        <button class="layui-btn layui-btn-danger" onclick="delAll()">
+            <i class="layui-icon layui-icon-delete"></i>批量删除
+        </button>
+        <button class="layui-btn" onclick="WeAdminShow('添加用户','./add.html',600,400)">
+            <i class="layui-icon layui-icon-add-circle-fine"></i>添加
+        </button>
+        @*<span class="fr" style="line-height:40px">共有数据：88 条</span>*@
+    </div>
+    <table id="demo" lay-filter="test"></table>
+</div>
+<script type="text/html" id="stateBar0">
+    <ul>
+
+        {{#  if(d.warning_mobile.length === 0){ }}
+        无数据
+        {{#  } else{  }}
+
+        {{# var test =JSON.parse(d.warning_mobile); layui.each(test, function(index, item){ }}
+        <li>
+            <span>{{ test[index] }}</span>
+        </li>
+        {{#  });} }}
+    </ul>
+</script>
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">预警电话</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">预警短信</a>
+</script>
+<script>
+    layui.use('table', function () {
+        var table = layui.table;
+        //ID
+        //第一个实例
+        table.render({
+            elem: '#demo'
+            , height: 550
+            , url: '/Member/List' //数据接口
+            , page: true //开启分页
+            , cols: [[ //表头
+                { field: 'id', title: 'ID', sort: true, fixed: 'left' }
+                , { field: 'username', title: '账号' }
+                , { field: 'nick_name', title: '昵称', sort: true }
+                , { field: 'mobile', title: '手机号' }
+                , { field: 'warning_mobile', title: '预警手机', templet: "#stateBar0"}
+                , {field: 'create_time', title: '创建日期', sort: true, templet:"<div>{{layui.util.toDateString(d.create_time, 'yyyy-MM-dd')}}</div>" }
+                , { field: 'score', title: '操作',  sort: true, toolbar: '#barDemo' }
+            ]]
+            ,id: 'idTest'
+        });
+        //监听工具条
+        table.on('tool(demo)', function (obj) {
+            var data = obj.data;
+            if (obj.event === 'detail') {
+                layer.msg('ID：' + data.id + ' 的查看操作');
+            } else if (obj.event === 'del') {
+                layer.confirm('真的删除行么', function (index) {
+                    obj.del();
+                    layer.close(index);
+                });
+            } else if (obj.event === 'edit') {
+                layer.alert('编辑行：<br>' + JSON.stringify(data))
+            }
+        });
+        table.resize('idTest');
+    });
+</script>
+<style>
+    .layui-table-cell {
+        height: auto;
+    }
+</style>

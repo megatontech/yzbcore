@@ -1,0 +1,264 @@
+2020-08-03 00:18:49,062 [1] ERROR errLog [(null)] - staart
+2020-08-03 00:19:37,682 [1] ERROR errLog [(null)] - staart
+2020-08-03 00:19:40,707 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 00:23:57,536 [1] ERROR errLog [(null)] - staart
+2020-08-03 00:24:00,639 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 00:25:41,871 [7] ERROR errLog [(null)] - 会话连接建立2020/8/3 0:25:40 +08:00
+2020-08-03 00:25:46,261 [404] ERROR errLog [(null)] - UsePackageHandler{"Key":"112","Body":null,"Parameters":null}
+2020-08-03 00:25:46,262 [404] ERROR errLog [(null)] - MESSAGE"112"
+2020-08-03 00:28:13,113 [785] ERROR errLog [(null)] - UsePackageHandler{"Key":"999","Body":null,"Parameters":null}
+2020-08-03 00:28:13,114 [785] ERROR errLog [(null)] - MESSAGE"999"
+2020-08-03 00:45:09,917 [1] ERROR errLog [(null)] - staart
+2020-08-03 01:30:23,964 [1] ERROR errLog [(null)] - staart
+2020-08-03 01:30:27,165 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 01:30:49,317 [9] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"1342222","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 01:31:06,399 [7] ERROR errLog [(null)] - 会话连接建立2020/8/3 1:31:06 +08:00
+2020-08-03 01:31:52,028 [11] ERROR errLog [(null)] - UsePackageHandler{"Key":"1342222,test","Body":null,"Parameters":null}
+2020-08-03 01:31:52,029 [11] ERROR errLog [(null)] - MESSAGE"1342222,test"
+2020-08-03 01:33:21,944 [423] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"PING","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 01:36:10,816 [1] ERROR errLog [(null)] - staart
+2020-08-03 01:36:14,071 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 01:36:27,295 [9] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"2548","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 01:37:12,533 [6] ERROR errLog [(null)] - 会话连接建立2020/8/3 1:37:12 +08:00
+2020-08-03 01:37:19,752 [9] ERROR errLog [(null)] - UsePackageHandler{"Key":"2548,test","Body":null,"Parameters":null}
+2020-08-03 01:37:19,757 [9] ERROR errLog [(null)] - MESSAGE"2548,test"
+2020-08-03 01:40:18,965 [1] ERROR errLog [(null)] - staart
+2020-08-03 01:40:36,543 [1] ERROR errLog [(null)] - staart
+2020-08-03 01:40:39,558 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 01:40:50,414 [34] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"2548","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 01:40:51,651 [6] ERROR errLog [(null)] - 会话连接建立2020/8/3 1:40:51 +08:00
+2020-08-03 01:40:57,368 [5] ERROR errLog [(null)] - UsePackageHandler{"Key":"2548,test","Body":null,"Parameters":null}
+2020-08-03 01:40:57,368 [5] ERROR errLog [(null)] - MESSAGE"2548,test"
+2020-08-03 01:41:38,166 [1] ERROR errLog [(null)] - staart
+2020-08-03 01:41:41,337 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 01:42:05,184 [6] ERROR errLog [(null)] - 会话连接建立2020/8/3 1:42:04 +08:00
+2020-08-03 01:42:18,757 [5] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"2548","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 01:42:30,814 [9] ERROR errLog [(null)] - UsePackageHandler{"Key":"2548,test","Body":null,"Parameters":null}
+2020-08-03 01:42:30,815 [9] ERROR errLog [(null)] - MESSAGE"2548,test"
+2020-08-03 01:43:13,067 [33] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"2223","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 01:43:21,517 [308] ERROR errLog [(null)] - UsePackageHandler{"Key":"2548,test","Body":null,"Parameters":null}
+2020-08-03 01:43:21,517 [308] ERROR errLog [(null)] - MESSAGE"2548,test"
+2020-08-03 01:43:44,359 [340] ERROR errLog [(null)] - UsePackageHandler{"Key":"2223,test","Body":null,"Parameters":null}
+2020-08-03 01:43:44,359 [340] ERROR errLog [(null)] - MESSAGE"2223,test"
+2020-08-03 01:44:29,608 [113] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 01:45:35,865 [113] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 01:45:54,934 [113] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 01:46:46,038 [831] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,22,33,0","Body":null,"Parameters":null}
+2020-08-03 01:46:46,038 [831] ERROR errLog [(null)] - MESSAGE"WZ01599,22,33,0"
+2020-08-03 01:47:04,106 [832] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"WZ01599","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 01:47:10,864 [832] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,22,33,0","Body":"","Parameters":[""]}
+2020-08-03 01:47:10,867 [832] ERROR errLog [(null)] - MESSAGE"WZ01599,22,33,0"
+2020-08-03 01:47:38,414 [944] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,22,33,0","Body":"","Parameters":[""]}
+2020-08-03 01:47:38,414 [944] ERROR errLog [(null)] - MESSAGE"WZ01599,22,33,0"
+2020-08-03 01:48:20,069 [989] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,22,33,0","Body":"","Parameters":[""]}
+2020-08-03 01:48:20,069 [989] ERROR errLog [(null)] - MESSAGE"WZ01599,22,33,0"
+2020-08-03 09:24:48,215 [11991] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,22,33,0","Body":null,"Parameters":null}
+2020-08-03 09:24:48,215 [11991] ERROR errLog [(null)] - MESSAGE"WZ01599,22,33,0"
+2020-08-03 09:26:29,407 [11991] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,22,33,0","Body":"","Parameters":[""]}
+2020-08-03 09:26:29,408 [11991] ERROR errLog [(null)] - MESSAGE"WZ01599,22,33,0"
+2020-08-03 09:33:34,821 [1] ERROR errLog [(null)] - staart
+2020-08-03 09:33:37,964 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 09:34:15,505 [5] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 09:34:23,887 [87] ERROR errLog [(null)] - 会话连接建立2020/8/3 9:34:23 +08:00
+2020-08-03 09:34:47,327 [147] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"WZ01599","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 09:34:52,124 [9] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,10,20,0","Body":null,"Parameters":null}
+2020-08-03 09:34:52,124 [9] ERROR errLog [(null)] - MESSAGE"WZ01599,10,20,0"
+2020-08-03 09:35:42,062 [326] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,10,20,0","Body":null,"Parameters":null}
+2020-08-03 09:35:42,062 [326] ERROR errLog [(null)] - MESSAGE"WZ01599,10,20,0"
+2020-08-03 09:35:58,988 [9] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,10,20,0","Body":null,"Parameters":null}
+2020-08-03 09:35:58,989 [9] ERROR errLog [(null)] - MESSAGE"WZ01599,10,20,0"
+2020-08-03 09:36:43,429 [1] ERROR errLog [(null)] - staart
+2020-08-03 09:36:46,490 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 09:37:00,748 [15] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"WZ01599","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 09:37:04,159 [7] ERROR errLog [(null)] - 会话连接建立2020/8/3 9:37:04 +08:00
+2020-08-03 09:37:06,072 [28] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,10,20,0","Body":"","Parameters":[""]}
+2020-08-03 09:37:06,073 [28] ERROR errLog [(null)] - MESSAGE"WZ01599,10,20,0"
+2020-08-03 09:42:27,563 [1] ERROR errLog [(null)] - staart
+2020-08-03 09:42:30,621 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 09:42:48,841 [72] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 09:42:56,654 [9] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"WZ01599","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 09:43:04,692 [86] ERROR errLog [(null)] - 会话连接建立2020/8/3 9:43:04 +08:00
+2020-08-03 09:43:06,243 [70] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,10,20,0","Body":null,"Parameters":null}
+2020-08-03 09:43:06,243 [70] ERROR errLog [(null)] - MESSAGE"WZ01599,10,20,0"
+2020-08-03 10:07:36,473 [1] ERROR errLog [(null)] - staart
+2020-08-03 10:07:39,670 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 10:08:34,868 [237] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 10:08:43,816 [220] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"PING","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 10:08:44,799 [239] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"PING","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 10:08:45,804 [219] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"PING","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 10:08:46,795 [239] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"WZ01599","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 10:08:53,122 [243] ERROR errLog [(null)] - 会话连接建立2020/8/3 10:08:53 +08:00
+2020-08-03 10:09:07,049 [360] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,5,99,0","Body":null,"Parameters":null}
+2020-08-03 10:09:07,050 [360] ERROR errLog [(null)] - MESSAGE"WZ01599,5,99,0"
+2020-08-03 10:10:43,881 [360] ERROR errLog [(null)] - sendSms to13040679332我的禽舍2温度和湿度{"reason":"操作成功","result":{"sid":"81A8AB0382FF805F","fee":1,"count":1},"error_code":0}
+2020-08-03 10:12:40,773 [360] ERROR errLog [(null)] - sendSms to13040679332我的禽舍2温度和湿度{"reason":"操作成功","result":{"sid":"81A8C28382FF80D7","fee":1,"count":1},"error_code":0}
+2020-08-03 10:12:40,824 [360] ERROR errLog [(null)] - 温度和湿度-短信WZ01599,5,99,0设置{"serial":"WZ01599","name":"智能盒子01599","status":"False","bind_status":"True","birdhouse_name":"我的禽舍2","min_temperature":"77.00","max_temperature":"44.00","min_humidity":"33.00","max_humidity":"88.00","warning_ammonia_concentration":"0.00","warning_negative_pressure":"0.00","warning_mobile":"[\"13040679332\",\"13040679333\",\"14702178962\"]","username":"13040679332","smsEnableFlag":false,"sms":2,"phone":3,"call_num":0,"currentTemp":"5","currentHumidity":"99","currentPower":"0","setDate":"2020-08-03T00:00:00+08:00"}
+2020-08-03 10:14:57,158 [570] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,5,99,0","Body":"","Parameters":[""]}
+2020-08-03 10:14:57,158 [570] ERROR errLog [(null)] - MESSAGE"WZ01599,5,99,0"
+2020-08-03 10:18:20,661 [1] ERROR errLog [(null)] - staart
+2020-08-03 10:18:23,744 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 10:18:28,385 [6] ERROR errLog [(null)] - 会话连接建立2020/8/3 10:18:28 +08:00
+2020-08-03 10:18:38,820 [9] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"WZ01599","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 10:19:30,646 [280] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,50,0","Body":null,"Parameters":null}
+2020-08-03 10:19:30,646 [280] ERROR errLog [(null)] - MESSAGE"WZ01599,28,50,0"
+2020-08-03 10:34:51,947 [1] ERROR errLog [(null)] - staart
+2020-08-03 10:34:54,984 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 10:35:51,159 [248] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 10:39:39,657 [46] ERROR errLog [(null)] - 会话连接建立2020/8/3 10:39:39 +08:00
+2020-08-03 10:39:49,909 [894] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"WZ01599","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 10:39:57,165 [875] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,50,0","Body":"","Parameters":[""]}
+2020-08-03 10:39:57,165 [875] ERROR errLog [(null)] - MESSAGE"WZ01599,28,50,0"
+2020-08-03 10:42:16,143 [920] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,50,1","Body":"","Parameters":[""]}
+2020-08-03 10:42:16,146 [920] ERROR errLog [(null)] - MESSAGE"WZ01599,28,50,1"
+2020-08-03 10:43:52,932 [1010] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,50,1","Body":null,"Parameters":null}
+2020-08-03 10:43:52,932 [1010] ERROR errLog [(null)] - MESSAGE"WZ01599,28,50,1"
+2020-08-03 10:44:38,708 [920] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,50,1","Body":null,"Parameters":null}
+2020-08-03 10:44:38,708 [920] ERROR errLog [(null)] - MESSAGE"WZ01599,28,50,1"
+2020-08-03 10:44:55,343 [920] ERROR errLog [(null)] - 开始报警-短信
+2020-08-03 10:45:01,511 [920] ERROR errLog [(null)] - CodeCallOut{"action":"callOutCode","dst":"13040679332","appid":"44a613a1fd2943da9b3e0ef6b9bfab82","code":"01053924437"}
+2020-08-03 10:45:03,531 [920] ERROR errLog [(null)] - CodeCallOut{"statusCode":"-205","statusMsg":"应用验证失败"}
+2020-08-03 10:45:12,029 [920] ERROR errLog [(null)] - 时间: 2020/8/3 10:45:11第1次电话通知状态System.Threading.Tasks.Task`1[System.Boolean]requestId：被叫号码13040679332
+2020-08-03 10:45:57,257 [920] ERROR errLog [(null)] - 电源-电话WZ01599,28,50,1设置{"serial":"WZ01599","name":"智能盒子01599","status":"False","bind_status":"True","birdhouse_name":"我的禽舍2","min_temperature":"25.00","max_temperature":"35.00","min_humidity":"44.00","max_humidity":"55.00","warning_ammonia_concentration":"0.00","warning_negative_pressure":"0.00","warning_mobile":"[\"13040679332\",\"13040679333\",\"14702178962\"]","username":"13040679332","smsEnableFlag":true,"sms":3,"phone":3,"call_num":2,"currentTemp":"28","currentHumidity":"50","currentPower":"0","setDate":"2020-08-03T00:00:00+08:00"}
+2020-08-03 10:45:57,258 [920] ERROR errLog [(null)] - 时间: 2020/8/3 10:45:57电话通知状态System.Threading.Tasks.Task`1[System.Boolean]requestId：被叫号码13040679332
+2020-08-03 10:47:55,641 [1] ERROR errLog [(null)] - staart
+2020-08-03 10:47:58,626 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 10:48:34,199 [33] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 10:48:40,151 [9] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"WZ01599","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 10:48:43,113 [168] ERROR errLog [(null)] - 会话连接建立2020/8/3 10:48:43 +08:00
+2020-08-03 10:49:02,535 [147] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,38,48,1","Body":null,"Parameters":null}
+2020-08-03 10:49:02,535 [147] ERROR errLog [(null)] - MESSAGE"WZ01599,38,48,1"
+2020-08-03 10:50:46,010 [468] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,38,48,1","Body":"","Parameters":[""]}
+2020-08-03 10:50:46,010 [468] ERROR errLog [(null)] - MESSAGE"WZ01599,38,48,1"
+2020-08-03 10:51:31,345 [468] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,38,48,0","Body":null,"Parameters":null}
+2020-08-03 10:51:31,345 [468] ERROR errLog [(null)] - MESSAGE"WZ01599,38,48,0"
+2020-08-03 10:51:46,990 [468] ERROR errLog [(null)] - sendSms to18678091709我的禽舍2温度{"reason":"操作成功","result":{"sid":"81AB3AC382FF8E3F","fee":1,"count":1},"error_code":0}
+2020-08-03 10:51:51,756 [468] ERROR errLog [(null)] - 温度-短信：数据WZ01599,38,48,0设置{"serial":"WZ01599","name":"智能盒子01599","status":"False","bind_status":"True","birdhouse_name":"我的禽舍2","min_temperature":"25.00","max_temperature":"35.00","min_humidity":"44.00","max_humidity":"55.00","warning_ammonia_concentration":"0.00","warning_negative_pressure":"0.00","warning_mobile":"[\"18678091709\",\"19953606615\",\"13040679332\"]","username":"13040679332","smsEnableFlag":false,"sms":2,"phone":3,"call_num":2,"currentTemp":"38","currentHumidity":"48","currentPower":"1","setDate":"2020-08-03T00:00:00+08:00"}
+2020-08-03 10:56:57,272 [1] ERROR errLog [(null)] - staart
+2020-08-03 10:57:00,517 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 10:57:11,402 [25] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"WZ01599","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 10:57:16,443 [6] ERROR errLog [(null)] - 会话连接建立2020/8/3 10:57:16 +08:00
+2020-08-03 10:57:18,838 [32] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,38,48,0","Body":"","Parameters":[""]}
+2020-08-03 10:57:18,839 [32] ERROR errLog [(null)] - MESSAGE"WZ01599,38,48,0"
+2020-08-03 10:57:37,135 [32] ERROR errLog [(null)] - sendSms to18678091709我的禽舍2温度{"reason":"操作成功","result":{"sid":"81AB984382FF9020","fee":1,"count":1},"error_code":0}
+2020-08-03 10:57:37,166 [32] ERROR errLog [(null)] - 温度-短信：数据WZ01599,38,48,0设置{"serial":"WZ01599","name":"智能盒子01599","status":"False","bind_status":"True","birdhouse_name":"我的禽舍2","min_temperature":"25.00","max_temperature":"35.00","min_humidity":"44.00","max_humidity":"55.00","warning_ammonia_concentration":"0.00","warning_negative_pressure":"0.00","warning_mobile":"[\"18678091709\",\"19953606615\",\"13040679332\"]","username":"13040679332","smsEnableFlag":false,"sms":2,"phone":3,"call_num":0,"currentTemp":"38","currentHumidity":"48","currentPower":"0","setDate":"2020-08-03T00:00:00+08:00"}
+2020-08-03 10:58:01,241 [32] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,8,0","Body":" ","Parameters":["",""]}
+2020-08-03 10:58:01,241 [32] ERROR errLog [(null)] - MESSAGE"WZ01599,28,8,0"
+2020-08-03 10:58:53,881 [336] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,48,0","Body":null,"Parameters":null}
+2020-08-03 10:58:53,882 [336] ERROR errLog [(null)] - MESSAGE"WZ01599,28,48,0"
+2020-08-03 10:59:15,109 [393] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,8,0","Body":"","Parameters":[""]}
+2020-08-03 10:59:15,109 [393] ERROR errLog [(null)] - MESSAGE"WZ01599,28,8,0"
+2020-08-03 10:59:27,150 [393] ERROR errLog [(null)] - sendSms to18678091709我的禽舍2湿度{"reason":"操作成功","result":{"sid":"81ABB60382FF90B7","fee":1,"count":1},"error_code":0}
+2020-08-03 10:59:27,156 [393] ERROR errLog [(null)] - 湿度-短信：数据WZ01599,28,8,0设置{"serial":"WZ01599","name":"智能盒子01599","status":"False","bind_status":"True","birdhouse_name":"我的禽舍2","min_temperature":"25.00","max_temperature":"35.00","min_humidity":"44.00","max_humidity":"55.00","warning_ammonia_concentration":"0.00","warning_negative_pressure":"0.00","warning_mobile":"[\"18678091709\",\"19953606615\",\"13040679332\"]","username":"13040679332","smsEnableFlag":false,"sms":1,"phone":3,"call_num":0,"currentTemp":"38","currentHumidity":"48","currentPower":"0","setDate":"2020-08-03T00:00:00+08:00"}
+2020-08-03 10:59:35,986 [215] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,48,0","Body":"","Parameters":[""]}
+2020-08-03 10:59:35,987 [215] ERROR errLog [(null)] - MESSAGE"WZ01599,28,48,0"
+2020-08-03 10:59:49,105 [215] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,98,4,0","Body":" ","Parameters":["",""]}
+2020-08-03 10:59:49,107 [215] ERROR errLog [(null)] - MESSAGE"WZ01599,98,4,0"
+2020-08-03 10:59:56,762 [215] ERROR errLog [(null)] - sendSms to18678091709我的禽舍2温度和湿度{"reason":"操作成功","result":{"sid":"81ABBE4382FF90E6","fee":1,"count":1},"error_code":0}
+2020-08-03 10:59:56,764 [215] ERROR errLog [(null)] - 温度和湿度-短信WZ01599,98,4,0设置{"serial":"WZ01599","name":"智能盒子01599","status":"False","bind_status":"True","birdhouse_name":"我的禽舍2","min_temperature":"25.00","max_temperature":"35.00","min_humidity":"44.00","max_humidity":"55.00","warning_ammonia_concentration":"0.00","warning_negative_pressure":"0.00","warning_mobile":"[\"18678091709\",\"19953606615\",\"13040679332\"]","username":"13040679332","smsEnableFlag":false,"sms":0,"phone":3,"call_num":0,"currentTemp":"38","currentHumidity":"48","currentPower":"0","setDate":"2020-08-03T00:00:00+08:00"}
+2020-08-03 11:00:23,053 [572] ERROR errLog [(null)] - UsePackageHandler{"Key":"","Body":"WZ01599,28,48,0","Parameters":["WZ01599,28,48,0"]}
+2020-08-03 11:00:23,054 [572] ERROR errLog [(null)] - MESSAGE""
+2020-08-03 11:00:36,576 [573] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,48,1","Body":null,"Parameters":null}
+2020-08-03 11:00:36,576 [573] ERROR errLog [(null)] - MESSAGE"WZ01599,28,48,1"
+2020-08-03 11:00:52,657 [215] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,48,1","Body":null,"Parameters":null}
+2020-08-03 11:00:52,657 [215] ERROR errLog [(null)] - MESSAGE"WZ01599,28,48,1"
+2020-08-03 11:00:57,602 [573] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,48,1","Body":null,"Parameters":null}
+2020-08-03 11:00:57,603 [573] ERROR errLog [(null)] - MESSAGE"WZ01599,28,48,1"
+2020-08-03 11:01:02,020 [573] ERROR errLog [(null)] - 开始报警-短信
+2020-08-03 11:01:12,188 [573] ERROR errLog [(null)] - CodeCallOut{"action":"callOutCode","dst":"18678091709","appid":"44a613a1fd2943da9b3e0ef6b9bfab82","code":"01053924437"}
+2020-08-03 11:10:50,608 [1] ERROR errLog [(null)] - staart
+2020-08-03 11:10:53,647 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 11:11:07,031 [5] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 11:11:11,489 [59] ERROR errLog [(null)] - 会话连接建立2020/8/3 11:11:11 +08:00
+2020-08-03 11:11:20,090 [65] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"WZ01599","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 11:11:23,028 [31] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,48,1","Body":"","Parameters":[""]}
+2020-08-03 11:11:23,029 [31] ERROR errLog [(null)] - MESSAGE"WZ01599,28,48,1"
+2020-08-03 11:11:29,751 [58] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,48,1","Body":"","Parameters":[""]}
+2020-08-03 11:11:29,752 [58] ERROR errLog [(null)] - MESSAGE"WZ01599,28,48,1"
+2020-08-03 11:11:36,570 [5] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,48,1","Body":"","Parameters":[""]}
+2020-08-03 11:11:36,572 [5] ERROR errLog [(null)] - MESSAGE"WZ01599,28,48,1"
+2020-08-03 11:11:42,684 [5] ERROR errLog [(null)] - 开始报警-短信
+2020-08-03 11:11:52,464 [5] ERROR errLog [(null)] - CodeCallOut{"action":"callOutCode","dst":"18678091709","appid":"44a613a1fd2943da9b3e0ef6b9bfab82","code":"01053924437"}
+2020-08-03 11:23:05,864 [1] ERROR errLog [(null)] - staart
+2020-08-03 11:23:08,914 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 11:24:40,455 [290] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 11:24:40,703 [6] ERROR errLog [(null)] - 会话连接建立2020/8/3 11:24:40 +08:00
+2020-08-03 11:24:45,501 [359] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,48,1","Body":null,"Parameters":null}
+2020-08-03 11:24:45,501 [359] ERROR errLog [(null)] - MESSAGE"WZ01599,28,48,1"
+2020-08-03 11:24:51,253 [375] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,48,1","Body":" ","Parameters":["",""]}
+2020-08-03 11:24:51,253 [375] ERROR errLog [(null)] - MESSAGE"WZ01599,28,48,1"
+2020-08-03 11:24:54,709 [376] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,48,1","Body":" ","Parameters":["",""]}
+2020-08-03 11:24:54,709 [376] ERROR errLog [(null)] - MESSAGE"WZ01599,28,48,1"
+2020-08-03 11:24:58,353 [376] ERROR errLog [(null)] - 开始报警-短信
+2020-08-03 11:25:06,902 [376] ERROR errLog [(null)] - CodeCallOut{"action":"callOutCode","dst":"18678091709","appid":"44a613a1fd2943da9b3e0ef6b9bfab82","code":"01053924437"}
+2020-08-03 11:35:03,629 [1] ERROR errLog [(null)] - staart
+2020-08-03 11:35:06,830 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 11:35:38,309 [18] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 11:35:41,029 [122] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"WZ01599","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 11:35:49,417 [7] ERROR errLog [(null)] - 会话连接建立2020/8/3 11:35:49 +08:00
+2020-08-03 11:35:51,353 [4] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,48,1","Body":null,"Parameters":null}
+2020-08-03 11:35:51,354 [4] ERROR errLog [(null)] - MESSAGE"WZ01599,28,48,1"
+2020-08-03 11:35:55,846 [4] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,48,1","Body":null,"Parameters":null}
+2020-08-03 11:35:55,846 [4] ERROR errLog [(null)] - MESSAGE"WZ01599,28,48,1"
+2020-08-03 11:35:59,731 [9] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,28,48,1","Body":null,"Parameters":null}
+2020-08-03 11:35:59,732 [9] ERROR errLog [(null)] - MESSAGE"WZ01599,28,48,1"
+2020-08-03 11:36:03,584 [9] ERROR errLog [(null)] - 开始报警-短信
+2020-08-03 11:36:08,038 [9] ERROR errLog [(null)] - NoticeCall{"action":"templateNoticeCall","dst":"18678091709","appid":"44a613a1fd2943da9b3e0ef6b9bfab82","templateId":"2821","dstclid":"01053924437","datas":["我的禽舍2", "电源"]}
+2020-08-03 11:36:44,398 [9] ERROR errLog [(null)] - CodeCallOut{"statusCode":"0","statusMsg":"提交成功","requestId":"20200838106837158776012800802"}
+2020-08-03 11:36:44,402 [9] ERROR errLog [(null)] - 时间: 2020/8/3 11:36:44第1次电话通知状态System.Threading.Tasks.Task`1[System.Boolean]requestId：被叫号码18678091709
+2020-08-03 11:36:44,434 [9] ERROR errLog [(null)] - 电源-电话WZ01599,28,48,1设置{"serial":"WZ01599","name":"智能盒子01599","status":"False","bind_status":"True","birdhouse_name":"我的禽舍2","min_temperature":"25.00","max_temperature":"35.00","min_humidity":"44.00","max_humidity":"55.00","warning_ammonia_concentration":"0.00","warning_negative_pressure":"0.00","warning_mobile":"[\"18678091709\",\"19953606615\",\"13040679332\"]","username":"13040679332","smsEnableFlag":true,"sms":3,"phone":3,"call_num":2,"currentTemp":"28","currentHumidity":"48","currentPower":"1","setDate":"2020-08-03T00:00:00+08:00"}
+2020-08-03 11:36:44,434 [9] ERROR errLog [(null)] - 时间: 2020/8/3 11:36:44电话通知状态System.Threading.Tasks.Task`1[System.Boolean]requestId：被叫号码18678091709
+2020-08-03 14:16:07,818 [1] ERROR errLog [(null)] - staart
+2020-08-03 14:16:11,179 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 14:30:06,191 [1] ERROR errLog [(null)] - staart
+2020-08-03 14:30:09,304 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 14:31:02,847 [27] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 14:35:08,444 [1] ERROR errLog [(null)] - staart
+2020-08-03 14:35:11,518 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 14:37:17,032 [475] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 14:38:53,962 [1] ERROR errLog [(null)] - staart
+2020-08-03 14:38:57,026 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 14:39:18,497 [9] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 14:51:44,399 [1] ERROR errLog [(null)] - staart
+2020-08-03 14:51:47,577 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 14:53:14,017 [1] ERROR errLog [(null)] - staart
+2020-08-03 14:53:17,139 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 14:54:03,285 [1] ERROR errLog [(null)] - staart
+2020-08-03 14:54:06,437 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 14:55:04,223 [1] ERROR errLog [(null)] - staart
+2020-08-03 14:55:07,274 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 14:58:09,644 [1] ERROR errLog [(null)] - staart
+2020-08-03 14:58:12,808 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 14:58:48,989 [5] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 15:52:39,554 [1] ERROR errLog [(null)] - staart
+2020-08-03 15:52:42,828 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 15:56:32,874 [1] ERROR errLog [(null)] - staart
+2020-08-03 15:56:36,023 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 15:57:38,967 [267] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 15:57:38,975 [267] INFO  infoLog [(null)] - 【日志信息】：WZ01599
+2020-08-03 15:58:06,860 [267] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 15:58:06,861 [267] INFO  infoLog [(null)] - 【日志信息】：WZ01599
+2020-08-03 15:58:10,350 [7] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 15:58:10,351 [7] INFO  infoLog [(null)] - 【日志信息】：WZ01599
+2020-08-03 15:58:16,583 [286] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 15:58:16,584 [286] INFO  infoLog [(null)] - 【日志信息】：WZ01599
+2020-08-03 15:58:21,283 [287] INFO  infoLog [(null)] - 【日志信息】：{"OpCode":1,"FIN":true,"RSV1":false,"RSV2":false,"RSV3":false,"Message":"{\"uid\":\"WZ01599\"}","HttpHeader":{"Method":"GET","Path":"/","HttpVersion":"HTTP/1.1","Items":["Host","Connection","Pragma","Cache-Control","User-Agent","Upgrade","Origin","Sec-WebSocket-Version","Accept-Encoding","Accept-Language","Cookie","Sec-WebSocket-Key","Sec-WebSocket-Extensions"]},"Data":{"Length":0,"IsEmpty":true,"IsSingleSegment":true,"First":{"Length":0,"IsEmpty":true},"Start":{},"End":{}}}
+2020-08-03 15:58:21,284 [287] INFO  infoLog [(null)] - 【日志信息】：WZ01599
+2020-08-03 16:11:40,802 [1] ERROR errLog [(null)] - staart
+2020-08-03 16:11:44,011 [1] ERROR errLog [(null)] - FetchDataService start
+2020-08-03 16:12:50,903 [6] ERROR errLog [(null)] - 会话连接建立2020/8/3 16:12:50 +08:00
+2020-08-03 16:13:00,369 [280] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,88,22,0","Body":null,"Parameters":null}
+2020-08-03 16:13:00,370 [280] ERROR errLog [(null)] - MESSAGE"WZ01599,88,22,0"
+2020-08-03 16:14:35,528 [280] ERROR errLog [(null)] - sendSms to18678091709我的禽舍2温度和湿度{"reason":"操作成功","result":{"sid":"81C0E94382FFEA4B","fee":1,"count":1},"error_code":0}
+2020-08-03 16:14:35,595 [280] ERROR errLog [(null)] - 温度和湿度-短信WZ01599,88,22,0设置{"serial":"WZ01599","name":"智能盒子01599","status":"False","bind_status":"True","birdhouse_name":"我的禽舍2","min_temperature":"25.00","max_temperature":"35.00","min_humidity":"44.00","max_humidity":"55.00","warning_ammonia_concentration":"0.00","warning_negative_pressure":"0.00","warning_mobile":"[\"18678091709\",\"19953606615\",\"13040679332\"]","username":"13040679332","smsEnableFlag":false,"sms":2,"phone":3,"call_num":0,"currentTemp":"88","currentHumidity":"22","currentPower":"0","setDate":"2020-08-03T00:00:00+08:00"}
+2020-08-03 16:16:37,301 [335] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,33,22,0","Body":"","Parameters":[""]}
+2020-08-03 16:16:37,302 [335] ERROR errLog [(null)] - MESSAGE"WZ01599,33,22,0"
+2020-08-03 16:17:13,475 [280] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,33,22,0","Body":"","Parameters":[""]}
+2020-08-03 16:17:13,479 [280] ERROR errLog [(null)] - MESSAGE"WZ01599,33,22,0"
+2020-08-03 16:17:41,044 [336] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,33,50,0","Body":" ","Parameters":["",""]}
+2020-08-03 16:17:41,045 [336] ERROR errLog [(null)] - MESSAGE"WZ01599,33,50,0"
+2020-08-03 16:17:56,726 [336] ERROR errLog [(null)] - UsePackageHandler{"Key":"WZ01599,3,50,0","Body":null,"Parameters":null}
+2020-08-03 16:17:56,726 [336] ERROR errLog [(null)] - MESSAGE"WZ01599,3,50,0"
+2020-08-03 16:18:20,116 [336] ERROR errLog [(null)] - sendSms to18678091709我的禽舍2温度{"reason":"操作成功","result":{"sid":"81C1254382FFEB67","fee":1,"count":1},"error_code":0}
+2020-08-03 16:18:20,118 [336] ERROR errLog [(null)] - 温度-短信：数据WZ01599,3,50,0设置{"serial":"WZ01599","name":"智能盒子01599","status":"False","bind_status":"True","birdhouse_name":"我的禽舍2","min_temperature":"25.00","max_temperature":"35.00","min_humidity":"44.00","max_humidity":"55.00","warning_ammonia_concentration":"0.00","warning_negative_pressure":"0.00","warning_mobile":"[\"18678091709\",\"19953606615\",\"13040679332\"]","username":"13040679332","smsEnableFlag":false,"sms":1,"phone":3,"call_num":0,"currentTemp":"88","currentHumidity":"22","currentPower":"0","setDate":"2020-08-03T00:00:00+08:00"}
+2020-08-03 23:15:39,383 [1] ERROR errLog [(null)] - staart
+2020-08-03 23:15:40,017 [1] ERROR errLog [(null)] - FetchDataService start

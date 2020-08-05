@@ -1,0 +1,1282 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>yzbcore</name>
+    </assembly>
+    <members>
+        <member name="M:yzbcore.Bussiness.CommenHelper.SendRequest(System.String,System.String,System.String)">
+            <summary>
+            发送http请求访问接口
+            </summary>
+            <param name="url">api地址</param>
+            <param name="jsonData">api所需请求参数json字符串</param>
+            <returns>消息状态码</returns>
+        </member>
+        <member name="M:yzbcore.Bussiness.CommenHelper.Md5(System.String)">
+            <summary>
+            MD5加密
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yzbcore.Bussiness.CommenHelper.CheckValidationResult(System.Object,System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors)">
+            <summary>
+            回调验证证书问题
+            </summary>
+            <param name="sender">流对象</param>
+            <param name="certificate">证书</param>
+            <param name="chain">X509Chain</param>
+            <param name="errors">SslPolicyErrors</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:yzbcore.Bussiness.CommenHelper.Base64EnCode(System.String)">
+            <summary>
+            Base64加密
+            </summary>
+            <param name="Message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yzbcore.Bussiness.CommenHelper.Base64Decode(System.String)">
+            <summary>
+            Base64解密
+            </summary>
+            <param name="Message"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yzbcore.Bussiness.Util.FromUnixStamp(System.Int32)">
+            <summary>
+            将unix时间戳转化为datetime
+            </summary>
+            <param name="unixTimeStamp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yzbcore.Bussiness.Util.ToUnixStamp(System.DateTime)">
+            <summary>
+            将datetime转化为unix时间戳
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="T:yzbcore.Bussiness.LogHelper">
+            <summary>
+            log4net帮助类
+            AdoNetAppender仅支持到.net framework4.5，不支持在.net core项目中持久化日志到数据库
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.loginerr.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.loginerr.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.loginerr.msg">
+            <summary>
+            验证码错误
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.loginData.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.loginData.mobile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.loginData.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.loginData.end_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.loginData.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.loginData.update_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.loginData.token">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.login.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.login.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.login.data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.editBirModel.token">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.editBirModel.min_temperature">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.editBirModel.max_temperature">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.editBirModel.min_humidity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.editBirModel.max_humidity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.editBirModel.warning_ammonia_concentration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.editBirModel.warning_negative_pressure">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.editBirModel.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.editBir.token">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.editBir.model">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.deleteBir.token">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.deleteBir.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.dataCurveData.temperature">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.dataCurveData.humidity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.dataCurve.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.dataCurve.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.dataCurve.data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseDataItem.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseDataItem.member_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseDataItem.name">
+            <summary>
+            二
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseDataItem.type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseDataItem.equipment_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseDataItem.min_temperature">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseDataItem.max_temperature">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseDataItem.min_humidity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseDataItem.max_humidity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseDataItem.warning_ammonia_concentration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseDataItem.warning_negative_pressure">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseDataItem.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseData.total">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseData.per_page">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseData.current_page">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseData.last_page">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseData.data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseindex.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseindex.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseindex.data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseindexWithid.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseindexWithid.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.birdhouseindexWithid.data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.Addbirdhouse.name">
+            <summary>
+            {"name":"1","type":1,"equipment_id":"WZ10009","token":"c6357082fa114c8d8250d1a1cc25c344"}
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.Addbirdhouse.type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.Addbirdhouse.equipment_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.Addbirdhouse.token">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.CdrItem.requestid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.CdrItem.appid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.CdrItem.fid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.CdrItem.tel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.CdrItem.stime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.CdrItem.etime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.CdrItem.duration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.CdrItem.oriamount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.CdrItem.stateDesc">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.CallCallback.cdr">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.addEqu.token">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.addEqu.serial">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.deleteEquipment.token">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.deleteEquipment.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.noticeNumData.sms">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.noticeNumData.call_num">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.noticeNumData.phone">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.noticeNumData.warning_mobile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.noticeNumData.smsEnableFlag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.noticeNum.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.noticeNum.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.noticeNum.data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.editNickName.nick_name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.editNickName.token">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.memberData.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.memberData.username">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.memberData.nick_name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.memberData.avatar">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.memberData.mobile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.memberData.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.memberModel.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.memberModel.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.memberModel.data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.memberedit.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.memberedit.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.memberedit.data">
+            <summary>
+            修改成功
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.setWarningMobile.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.setWarningMobile.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.setWarningMobile.data">
+            <summary>
+            修改成功
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.warning_mobile.warning_mobilelist">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.warning_mobile.token">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.notoken.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.notoken.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.notoken.msg">
+            <summary>
+            没有登录
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.setWarningMobileModel.warning_mobile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.setWarningMobileModel.token">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:yzbcore.Controllers.app.toolsController.sendPost(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String)">
+            <summary>
+            Http (GET/POST)
+            </summary>
+            <param name="url">请求URL</param>
+            <param name="parameters">请求参数</param>
+            <param name="method">请求方法</param>
+            <returns>响应内容</returns>
+        </member>
+        <member name="M:yzbcore.Controllers.app.toolsController.BuildQuery(System.Collections.Generic.IDictionary{System.String,System.String},System.String)">
+            <summary>
+            组装普通文本请求参数。
+            </summary>
+            <param name="parameters">Key-Value形式请求参数字典</param>
+            <returns>URL编码后的请求数据</returns>
+        </member>
+        <member name="M:yzbcore.Controllers.app.toolsController.GetResponseAsString(System.Net.HttpWebResponse,System.Text.Encoding)">
+            <summary>
+            把响应流转换为文本。
+            </summary>
+            <param name="rsp">响应流对象</param>
+            <param name="encoding">编码方式</param>
+            <returns>响应文本</returns>
+        </member>
+        <member name="P:yzbcore.Controllers.app.pushSms.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.pushSms.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.pushSms.data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.scanmodel.debug">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.scanmodel.beta">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.scanmodel.jsApiList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.scanmodel.appId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.scanmodel.nonceStr">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.scanmodel.timestamp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.scanmodel.url">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.scanmodel.signature">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:yzbcore.Controllers.app.WeHelper.GetAccessToken">
+            <summary>
+            获取Token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yzbcore.Controllers.app.WeHelper.GetTicket(System.String)">
+            <summary>
+            获取token
+            </summary>
+            <param name="accessToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yzbcore.Controllers.app.WeHelper.GetSignature(System.String,System.String,System.String)">
+            <summary>
+            获取签名
+            </summary>
+            <param name="timestamp"></param>
+            <param name="noncestr"></param>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yzbcore.Controllers.app.WeHelper.CreateNonceStr">
+            <summary>
+            生成随机字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:yzbcore.Controllers.app.WeHelper.SHA1(System.String)">
+            <summary>
+            加密
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yzbcore.Controllers.app.WeHelper.SHA1Encrypt(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            用SHA1加密字符串
+            </summary>
+            <param name="source">要扩展的对象</param>
+            <param name="isReplace">是否替换掉加密后的字符串中的"-"字符</param>
+            <param name="isToLower">是否把加密后的字符串转小写</param>
+            <returns></returns>
+        </member>
+        <member name="M:yzbcore.Controllers.app.WeHelper.CreateTimestamp">
+            <summary>
+            生成时间戳
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:yzbcore.Models.Admin.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.account">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.password">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.is_disable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.create_operator_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.update_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Admin.delete_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.admin">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.auth_group">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.auth_group_access">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.auth_rule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.birdhouse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.equipment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.equipment_status_logs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.member">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.sms_logs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Root.warning_logs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_group.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_group.title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_group.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_group.rules">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_group.create_operator_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_group_access.uid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_group_access.group_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.pid">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.sort">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Auth_rule.condition">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.member_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.type">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.equipment_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.min_temperature">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.最小温度">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.max_temperature">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.min_humidity">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.max_humidity">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.warning_ammonia_concentration">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.warning_negative_pressure">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.create_time">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.update_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Birdhouse.delete_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.serial">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.birdhouse_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.member_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.bind_status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.update_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment.delete_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.EquipmentDisp.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.EquipmentDisp.serial">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.EquipmentDisp.name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.EquipmentDisp.bname">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.EquipmentDisp.username">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.EquipmentDisp.bind_status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.EquipmentDisp.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment_status_logs.serial">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment_status_logs.temperature">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment_status_logs.humidity">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment_status_logs.power_status">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Equipment_status_logs.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.ModelBase.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.ModelBase.msg">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.ModelBase.count">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.username">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.nick_name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.avatar">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.mobile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.warning_mobile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Member.update_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Sms_logs.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Sms_logs.mobile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Sms_logs.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Sms_logs.end_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Sms_logs.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Sms_logs.update_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Warning_logs.id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Warning_logs.member_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Warning_logs.birdhouse_id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Warning_logs.cause">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Warning_logs.create_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Models.Warning_logs.update_time">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:yzbcore.Repository.ConnectionProvider.ConfigurationBuilder">
+            <summary>
+            加载配置文件，构建IConfigurationRoot
+            </summary>
+        </member>
+        <member name="F:yzbcore.Repository.ConnectionProvider._configuration">
+            <summary>
+            获取配置文件中的内容，继承自IConfiguration
+            </summary>
+        </member>
+        <member name="M:yzbcore.Socket.RedisCacheHelper.AddAsync(System.String,System.Object)">
+            <summary>
+            添加缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <returns></returns>
+        </member>
+        <member name="M:yzbcore.Socket.RedisCacheHelper.GetAsync``1(System.String)">
+            <summary>
+            添加缓存（异步方式）
+            </summary>
+            <param name="key">缓存Key</param>
+            <param name="value">缓存Value</param>
+            <returns></returns>
+        </member>
+        <member name="M:yzbcore.Socket.ICALL.templateNoticeCall(System.String,System.String,System.String,System.String)">
+            <summary>
+            "01053924437", cachemodel.birdhouse_name, content
+            </summary>
+            <param name="mobile"></param>
+            <param name="s1"></param>
+            <param name="s2"></param>
+            <param name="s3"></param>
+            <returns></returns>
+        </member>
+        <member name="M:yzbcore.Socket.SMS.sendPost(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.String)">
+            <summary>
+            Http (GET/POST)
+            </summary>
+            <param name="url">请求URL</param>
+            <param name="parameters">请求参数</param>
+            <param name="method">请求方法</param>
+            <returns>响应内容</returns>
+        </member>
+        <member name="M:yzbcore.Socket.SMS.BuildQuery(System.Collections.Generic.IDictionary{System.String,System.String},System.String)">
+            <summary>
+            组装普通文本请求参数。
+            </summary>
+            <param name="parameters">Key-Value形式请求参数字典</param>
+            <returns>URL编码后的请求数据</returns>
+        </member>
+        <member name="M:yzbcore.Socket.SMS.GetResponseAsString(System.Net.HttpWebResponse,System.Text.Encoding)">
+            <summary>
+            把响应流转换为文本。
+            </summary>
+            <param name="rsp">响应流对象</param>
+            <param name="encoding">编码方式</param>
+            <returns>响应文本</returns>
+        </member>
+        <member name="P:yzbcore.Socket.pushSms.code">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Socket.pushSms.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Socket.pushSms.data">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Socket.wsmessgae.uid">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
