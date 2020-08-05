@@ -34,6 +34,10 @@ namespace yzbcore.Controllers.app
         [Route("app/birdhouse/dataCurve")]
         public JsonResult dataCurve()
         {
+            try
+            {
+
+            
             var token = Request.Query["token"][0];
             var id = Request.Query["id"][0];  
             var cache=   CacheUntity.GetCache<UserCacheModel>(token);
@@ -47,33 +51,24 @@ namespace yzbcore.Controllers.app
             cuve.data.temperature = new List<float>();
             cuve.data.humidity = temph;
             cuve.data.temperature = tempt;
-            //int count = 1;
-            //float counth = 0f;
-            //for (int i = 0; i < 9; i++)
-            //{
-            //    cuve.data.humidity.Add(0);
-            //}
-            //foreach (var item in temph)
-            //{
-            //    count++;
-            //    counth += item;
-            //    if (count % 3 == 0) { cuve.data.humidity.Add(counth/3); }
-            //}
-            //int counttt = 1;
-            //float counttemp = 0f;
-            //foreach (var item in tempt)
-            //{
-            //    counttt++;
-            //    counttemp += item;
-            //    if (counttt % 3 == 0) { cuve.data.temperature.Add(counttemp / 3); }
-            //}
-            return Json(cuve); 
+            
+            return Json(cuve);
+            }
+            catch (Exception e)
+            {
+                LogHelper.Error(JsonConvert.SerializeObject(e));
+                return Json(new nologin());
+            }
         }
          
         [HttpPost]
         [Route("app/birdhouse/deleteBir")]
         public JsonResult deleteBir()
         {
+            try
+            {
+
+            
             var token = Request.Query["token"][0];
             var id = Request.Query["id"][0];
             //var token = value.token ;
@@ -88,13 +83,23 @@ namespace yzbcore.Controllers.app
             var model = _cache.FillCacheWithToken(token, cache.member);
             CacheUntity.SetCache(token, model.Result);
             return Json(new { code = 1, status = "success", msg = "添加成功" });
+            }
+            catch (Exception e)
+            {
+                LogHelper.Error(JsonConvert.SerializeObject(e));
+                return Json(new nologin());
+            }
         }
 
         [HttpPost]
         [Route("app/birdhouse/editBir")]
         public JsonResult editBir([FromBody] editBirModel value)
         {
-            var token = value.token;
+            try
+            {
+
+           
+    var token = value.token;
             var cache = CacheUntity.GetCache<UserCacheModel>(token);
             //var birdModelStr = value.model;
             //var birdModel = value.model;
@@ -137,12 +142,22 @@ namespace yzbcore.Controllers.app
             model.setDate = DateTime.Now.Date;
             CacheUntity.SetCache(birdhouse.equipment_id, model);
             return Json(new { code = 1, status = "success", msg = "添加成功" });
+            }
+            catch (Exception e)
+            {
+                LogHelper.Error(JsonConvert.SerializeObject(e));
+                return Json(new nologin());
+            }
         }
 
         [HttpGet]
         [Route("app/birdhouse/getBirdhouseParams")]
         public JsonResult getBirdhouseParams()
         {
+            try
+            {
+
+           
             var token = Request.Query["token"][0];
             var seial = Request.Query["serial"][0];
             var equip = _equipment.GetByserial(seial);
@@ -153,6 +168,12 @@ namespace yzbcore.Controllers.app
             var data1 = _logs.GetByserial(seial);
             if (data1 != null) { data = data1; }
             return Json(new { code = 1, status = "success", data = new List<string> { seial, data.temperature, data.humidity, data.power_status.ToString()}, msg = "添加成功" });
+            }
+            catch (Exception e)
+            {
+                LogHelper.Error(JsonConvert.SerializeObject(e));
+                return Json(new nologin());
+            }
         }
 
         // GET: api/<birdhouseController>
@@ -160,6 +181,10 @@ namespace yzbcore.Controllers.app
         [Route("app/birdhouse/index")]
         public JsonResult index()
         {
+            try
+            {
+
+            
             var token = Request.Query["token"][0];
             if (string.IsNullOrEmpty(token)) { return Json(new notoken { }); }
             var id = "";
@@ -228,6 +253,12 @@ namespace yzbcore.Controllers.app
                     };
                 return Json(index);
             }
+            }
+            catch (Exception e)
+            {
+                LogHelper.Error(JsonConvert.SerializeObject(e));
+                return Json(new nologin());
+            }
         }
 
         // POST api/<birdhouseController>
@@ -235,7 +266,12 @@ namespace yzbcore.Controllers.app
         [Route("app/birdhouse/index")]
         public JsonResult index([FromBody] Addbirdhouse value)
         {
-            var token = value.token;
+            try
+            {
+
+            
+            
+    var token = value.token;
             var cache = CacheUntity.GetCache<UserCacheModel>(token);
             var temp = _equipment.GetByserial(value.equipment_id);
             if (temp == null)
@@ -272,6 +308,12 @@ namespace yzbcore.Controllers.app
             var model = _cache.FillCacheWithToken(token, cache.member);
             CacheUntity.SetCache(token, model.Result);
             return Json(new { code = 1, status = "success", msg = "添加成功" });
+            }
+            catch (Exception e)
+            {
+                LogHelper.Error(JsonConvert.SerializeObject(e));
+                return Json(new nologin());
+            }
         }
 
         #endregion Public Methods

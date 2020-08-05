@@ -63,6 +63,21 @@
             AdoNetAppender仅支持到.net framework4.5，不支持在.net core项目中持久化日志到数据库
             </summary>
         </member>
+        <member name="P:yzbcore.Controllers.app.nologin.code">
+            <summary>
+            {"code":-1,"status":"fail","msg":"没有登录"}
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.nologin.status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:yzbcore.Controllers.app.nologin.msg">
+            <summary>
+            没有登录
+            </summary>
+        </member>
         <member name="P:yzbcore.Controllers.app.loginerr.code">
             <summary>
             

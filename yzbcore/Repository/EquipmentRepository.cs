@@ -274,8 +274,9 @@ namespace yzbcore.Bussiness
             {
                 var dte = Util.ToUnixStamp(DateTime.Now.Date.AddDays(1));
                 var dts = Util.ToUnixStamp(DateTime.Now.Date);
-                var query = @"select humidity as val,hours as hour from(SELECT
-	                            HOUR (from_unixtime(create_time)) AS hours,
+                var query = @"select humidity as val,hours as hour,M from(SELECT
+	                            HOUR (from_unixtime(create_time)) AS hours,FLOOR(MINUTE(from_unixtime(create_time)) / 30) AS M,
+	                           
 	                            avg(temperature) AS temperature,
 	                            avg(humidity) AS humidity
                             FROM
@@ -285,16 +286,17 @@ namespace yzbcore.Bussiness
                             AND (create_time) <= @dte
                             AND (create_time) >= @dts
                             GROUP BY
+                            FLOOR(MINUTE(from_unixtime(create_time)) / 30),
 	                            hours
                             ORDER BY
 	                            hours) temp;";
                 dbConnection.Open();
                 var cur= (List<curveModel>)dbConnection.Query<curveModel>(query, new { id = id, dte = dte, dts = dts });
                 var result = new List<float>();
-                for (int i = 0; i < 9; i++)
+                for (int i = 0; i < 49; i++)
                 {
                     var temp = 0f;
-                    if (cur.Any(x => x.hour < ((i + 1) * 3) && x.hour >= ((i) * 3))) { temp = cur.Where(x => x.hour < ((i + 1) * 3) && x.hour >= ((i) * 3)).Average(x => x.val); }
+                    if (cur.Any(x => ((x.hour*2)+x.M) == (i))) { temp = cur.Where(x => ((x.hour * 2) + x.M) == (i)).Average(x => x.val); }
                     result.Add(temp);
                 }
                 return result;
@@ -307,8 +309,8 @@ namespace yzbcore.Bussiness
             {
                 var dte = Util.ToUnixStamp(DateTime.Now.Date.AddDays(1));
                 var dts = Util.ToUnixStamp(DateTime.Now.Date);
-                var query = @"select temperature as val,hours as hour  from(SELECT
-	                            HOUR (from_unixtime(create_time)) AS hours,
+                var query = @"select temperature as val,hours as hour,M  from(SELECT
+	                            HOUR (from_unixtime(create_time)) AS hours,FLOOR(MINUTE(from_unixtime(create_time)) / 30) AS M,
 	                            avg(temperature) AS temperature,
 	                            avg(humidity) AS humidity
                             FROM
@@ -318,16 +320,17 @@ namespace yzbcore.Bussiness
                             AND (create_time) <= @dte
                             AND (create_time) >= @dts
                             GROUP BY
+                        FLOOR(MINUTE(from_unixtime(create_time)) / 30),
 	                            hours
                             ORDER BY
 	                            hours) temp;";
                 dbConnection.Open();
                 var cur = (List<curveModel>)dbConnection.Query<curveModel>(query, new { id = id, dte = dte, dts = dts });
                 var result = new List<float>();
-                for (int i = 0; i < 9; i++)
+                for (int i = 0; i < 49; i++)
                 {
-                    var temp = 0f;
-                    if (cur.Any(x => x.hour < ((i + 1) * 3) && x.hour >= ((i) * 3))) { temp = cur.Where(x => x.hour < ((i + 1) * 3) && x.hour >= ((i) * 3)).Average(x => x.val); }
+                    var temp = 33f;
+                    if (cur.Any(x => ((x.hour * 2) + x.M) == (i))) { temp = cur.Where(x => ((x.hour * 2) + x.M) == (i)).Average(x => x.val); }
                     result.Add(temp);
                 }
                 return result;
@@ -356,5 +359,7 @@ namespace yzbcore.Bussiness
     {
         public float val{ get; set; }
         public int hour{ get; set; }
+        public int M { get; set; }
+        
     } 
 }

@@ -74,6 +74,29 @@ namespace yzbcore.Controllers.app
 
     }
     //如果好用，请收藏地址，帮忙分享。
+    public class nologin
+    {
+        public nologin() 
+        {
+            code = -1;
+            status = "fail";
+            msg = "没有登录";
+        }
+        /// <summary>
+        /// {"code":-1,"status":"fail","msg":"没有登录"}
+        /// </summary>
+        public int code { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public string status { get; set; }
+        /// <summary>
+        /// 没有登录
+        /// </summary>
+        public string msg { get; set; }
+    }
+
+    //如果好用，请收藏地址，帮忙分享。
     public class loginerr
     {
         /// <summary>

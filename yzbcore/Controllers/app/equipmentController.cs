@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using yzbcore.Bussiness;
 using yzbcore.Models;
 using yzbcore.Socket;
@@ -29,6 +30,10 @@ namespace yzbcore.Controllers.app
         [Route("app/equipment/equipmentList")]
         public JsonResult equipmentList()
         {
+            try
+            {
+
+           
             var token = Request.Query["token"][0];
             //var cached = _cache.GetCacheByToken(token);
             var cache = CacheUntity.GetCache<UserCacheModel>(token);
@@ -39,6 +44,12 @@ namespace yzbcore.Controllers.app
                 list = _bird.GetAll().ToList().Where(x=>x.member_id==member_id.ToString()).ToList();
             }
             return Json(new { code = 1, status = "success", msg = "ok", data = list });
+            }
+            catch (Exception e)
+            {
+                LogHelper.Error(JsonConvert.SerializeObject(e));
+                return Json(new nologin());
+            }
         }
 
         // POST api/<equipmentController>
@@ -46,6 +57,10 @@ namespace yzbcore.Controllers.app
         [Route("app/equipment/addEqu")]
         public JsonResult addEqu([FromBody] addEqu value)
         {
+            try
+            {
+
+            
             var serial = value.serial;
             var token = value.token;
             //var cached = _cache.GetCacheByToken(token);
@@ -67,6 +82,12 @@ namespace yzbcore.Controllers.app
                 CacheUntity.SetCache(token, model.Result);
                 return Json(new { code = 1, status = "success", msg = "添加成功" });
             }
+            }
+            catch (Exception e)
+            {
+                LogHelper.Error(JsonConvert.SerializeObject(e));
+                return Json(new nologin());
+            }
         }
 
         // POST api/<equipmentController>
@@ -74,6 +95,10 @@ namespace yzbcore.Controllers.app
         [Route("app/equipment/deleteEquipment")]
         public JsonResult deleteEquipment([FromBody] deleteEquipment value)
         {
+            try
+            {
+
+            
             var id = value.id;
             var token = value.token;
             var cache = CacheUntity.GetCache<UserCacheModel>(token);
@@ -92,7 +117,12 @@ namespace yzbcore.Controllers.app
             {
                 return Json(new { code = -1, status = "fail", msg = "此设备已绑定禽舍无法解绑" });
             }
-            
+            }
+            catch (Exception e)
+            {
+                LogHelper.Error(JsonConvert.SerializeObject(e));
+                return Json(new nologin());
+            }
         }
 
     }

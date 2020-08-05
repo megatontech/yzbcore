@@ -27,66 +27,86 @@ namespace yzbcore.Controllers.app
         [Route("app/member/getMemberInfo")]
         public JsonResult getMemberInfo(string token)
         {
-            if (string.IsNullOrEmpty(token)) { return Json(new notoken { }); }
-            memberModel model = new memberModel();
-            int id = 0;
-            //var cached = _cache.GetCacheByToken(token);
-            var cache = CacheUntity.GetCache<UserCacheModel>(token);
-            id = cache.member.id.ToInt();
-                var user = _adminRepository.GetByID(id);
-            model.data = new memberData
+            try
             {
-                id = user.id.ToInt(),
-                avatar = user.avatar,
-                create_time = user.create_time,
-                mobile = user.mobile,
-                nick_name = user.nick_name,
-                username = user.username
-            };
+                if (string.IsNullOrEmpty(token)) { return Json(new notoken { }); }
+                memberModel model = new memberModel();
+                int id = 0;
+                //var cached = _cache.GetCacheByToken(token);
+                var cache = CacheUntity.GetCache<UserCacheModel>(token);
+                id = cache.member.id.ToInt();
+                var user = _adminRepository.GetByID(id);
+                model.data = new memberData
+                {
+                    id = user.id.ToInt(),
+                    avatar = user.avatar,
+                    create_time = user.create_time,
+                    mobile = user.mobile,
+                    nick_name = user.nick_name,
+                    username = user.username
+                };
 
-            return Json(model);
+                return Json(model);
+            }
+            catch (Exception e)
+            {
+                LogHelper.Error(JsonConvert.SerializeObject(e));
+                return Json(new nologin());
+            }
+            //finally { }
+            
         }
 
         [HttpGet]
         [Route("app/member/noticeNum")]
         public JsonResult noticeNum(string token)
         {
-            if (string.IsNullOrEmpty(token)) { return Json(new notoken { }); }
-            noticeNum model = new noticeNum();
-            model.code = 1;
-            model.status = "success";
-            int id = 0;
-            //var cached = _cache.GetCacheByToken(token);
-            var cache = CacheUntity.GetCache<UserCacheModel>(token);
-            id = cache.member.id.ToInt();
-            var user = _adminRepository.GetByID(id);
-            var smssum = 0;
-            var call_numsum = 0;
-            var phonesum = 0;
-            foreach (var item in cache.birdhouses)
+            try
             {
-                if (CacheUntity.Exists(item.equipment_id))
+                if (string.IsNullOrEmpty(token)) { return Json(new notoken { }); }
+                noticeNum model = new noticeNum();
+                model.code = 1;
+                model.status = "success";
+                int id = 0;
+                //var cached = _cache.GetCacheByToken(token);
+                var cache = CacheUntity.GetCache<UserCacheModel>(token);
+                id = cache.member.id.ToInt();
+                var user = _adminRepository.GetByID(id);
+                var smssum = 0;
+                var call_numsum = 0;
+                var phonesum = 0;
+                foreach (var item in cache.birdhouses)
                 {
-                    var devicecache = CacheUntity.GetCache<CacheModel>(item.equipment_id);
-                    smssum += devicecache.sms;
-                    phonesum += devicecache.phone;
-                }
-                else {
-                    smssum += 5;
-                    phonesum += 5; 
-                }
-                
-            }
-            model.data = new noticeNumData
-            {
-                sms = smssum,
-                call_num = call_numsum,
-                phone = phonesum,
-                smsEnableFlag = "enabled",
-                warning_mobile =JsonConvert.DeserializeObject<List<string>>( cache.member.warning_mobile)
-            };
+                    if (CacheUntity.Exists(item.equipment_id))
+                    {
+                        var devicecache = CacheUntity.GetCache<CacheModel>(item.equipment_id);
+                        smssum += devicecache.sms;
+                        phonesum += devicecache.phone;
+                    }
+                    else
+                    {
+                        smssum += 5;
+                        phonesum += 5;
+                    }
 
-            return Json(model);
+                }
+                model.data = new noticeNumData
+                {
+                    sms = smssum,
+                    call_num = call_numsum,
+                    phone = phonesum,
+                    smsEnableFlag = "enabled",
+                    warning_mobile = JsonConvert.DeserializeObject<List<string>>(cache.member.warning_mobile)
+                };
+
+                return Json(model);
+            }
+            catch (Exception e)
+            {
+                LogHelper.Error(JsonConvert.SerializeObject(e));
+                return Json(new nologin());
+            }
+            
         }
 
         // POST api/<memberController>
@@ -94,6 +114,10 @@ namespace yzbcore.Controllers.app
         [Route("app/member/editNickName")]
         public JsonResult editNickName([FromBody] editNickName model)
         {
+            try
+            {
+
+            
             var name = model.nick_name;
             var token = model.token;
             if (string.IsNullOrEmpty(token)) { return Json(new notoken { }); }
@@ -108,6 +132,13 @@ namespace yzbcore.Controllers.app
             var model1 = _cache.FillCacheWithToken(token, cache.member);
             CacheUntity.SetCache(token, model1.Result);
             return Json(new memberedit());
+            }
+            catch (Exception e)
+            {
+                LogHelper.Error(JsonConvert.SerializeObject(e));
+                return Json(new nologin());
+            }
+
         }
 
         // POST api/<memberController>
@@ -115,6 +146,11 @@ namespace yzbcore.Controllers.app
         [Route("app/member/setWarningMobile")]
         public JsonResult setWarningMobile([FromBody] setWarningMobileModel model)
         {
+            try
+            {
+
+            
+
             var warning_mobile = model.warning_mobile;
             var token = model.token;
             if (string.IsNullOrEmpty(token)) { return Json(new notoken { }); }
@@ -134,6 +170,12 @@ namespace yzbcore.Controllers.app
             var model1 = _cache.FillCacheWithToken(token, cache.member);
             CacheUntity.SetCache(token, model1.Result);
             return Json(new setWarningMobile());
+            }
+            catch (Exception e)
+            {
+                LogHelper.Error(JsonConvert.SerializeObject(e));
+                return Json(new nologin());
+            }
         }
 
 
