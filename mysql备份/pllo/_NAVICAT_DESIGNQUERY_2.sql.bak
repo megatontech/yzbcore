@@ -1,0 +1,33 @@
+SELECT
+	e.id,
+	e.serial,
+	e.`name`,
+	b.`name` bname,
+	m.username,
+	e.bind_status,
+	e.create_time
+FROM
+	`equipment` e
+LEFT JOIN birdhouse b ON e.birdhouse_id = b.id
+LEFT JOIN member m ON e.member_id = m.id
+LIMIT 0,
+ 1000 INSERT INTO ``.`` (
+	`id`,
+	`serial`,
+	`name`,
+	`name`,
+	`username`,
+	`bind_status`,
+	`create_time`
+)
+VALUES
+	(
+		'1',
+		'WZ01000',
+		'智能盒子01000',
+		'佃财养殖场',
+		'15964588626',
+		'1',
+		'1586594033'
+	);
+
