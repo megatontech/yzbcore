@@ -1,0 +1,26 @@
+1.前端代码不全，有很多问题
+2.my.vue加入如下，使报警电话正常
+this.$axios.get(this.$http + '/app/member/noticeNum', {
+          params: {
+            token: localStorage.getItem('token')
+          }
+        })
+        .then(function (response) {
+           console.log(JSON.stringify(response));
+           if(response.data.code == 1){
+              localStorage.setItem('num1',response.data.data.warning_mobile[0]);
+              localStorage.setItem('num2',response.data.data.warning_mobile[1]);
+              localStorage.setItem('num3',response.data.data.warning_mobile[2]);
+           }else if(response.data.code == "-1"){
+              that.$router.replace("/login")
+            }else{
+              Toast(response.data.msg)
+            }
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+3.curve.vue myChart1.setOption
+修改为["0",".",".",".",".",".","3",".",".",".",".",".","6",".",".",".",".",".","9",".",".",".",".",".","12",".",".",".",".",".","15",".",".",".",".",".","18",".",".",".",".",".","21",".",".",".",".",".","24"]
+
+4.修改参数时一定要传数字，传之前转换用Number()  app/birdhouse/editBir
